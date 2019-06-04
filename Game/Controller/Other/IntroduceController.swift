@@ -27,15 +27,17 @@ class IntroduceController: UIViewController {
         lblPlay.widthAnchor.constraint(equalToConstant: const).isActive = true
         lblPlay.heightAnchor.constraint(equalToConstant: const).isActive = true
         lblPlay.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        lblPlay.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -250)
+        lblPlay.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -250).isActive = true
+    
         
         lblGame.widthAnchor.constraint(equalToConstant: const).isActive = true
         lblGame.heightAnchor.constraint(equalToConstant: const).isActive = true
         lblGame.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        lblGame.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 250)
+        lblGame.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 250).isActive = true
         
-        
-        
+        lblPlay.text = "Chơi"
+        lblStill.text = "Mà"
+        lblGame.text = "Học"
         
     }
     
